@@ -318,7 +318,7 @@ li{ margin: 0.35rem 0; }
 .parallax-manor {
   position: relative;
   min-height: 70vh;
-  background-image: url("page_7 .jpg"); /* 👈 YOUR IMAGE */
+  background-image: url("page_7.jpg"); /* 👈 YOUR IMAGE */
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* PARALLAX */
