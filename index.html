@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <title>Κωστής & Λουκία — Save the date</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f1110" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Save the date!" />
+  <meta property="og:title" content="Κωστής & Λουκία" />
+  <meta property="og:description" content="Γάμος & Βάπτιση — 25/06/2026" />
+  <meta property="og:image" content="preview.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caudex&family=GFS+Neohellenic:wght@400;700&family=Literata:wght@200;300&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- JS -->
+  <script defer src="./index.js"></script>
+</head>
+
+<body>
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <a class="brand" href="#top">Κ & Λ</a>
+
+    <nav class="nav">
+      <a href="#details">Λεπτομέρειες</a>
+      <a href="#program">Πρόγραμμα</a>
+      <a href="#map">Χάρτης</a>
+      <a href="#stay">Διαμονή</a>
+      <a href="#rsvp" class="pill">RSVP</a>
+    </nav>
+
+    <button id="langToggle" class="lang-toggle" type="button">
+      ΕΛ / EN
+    </button>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+
+      <div class="hero-inner">
+        <p class="kicker">Γάμος & Βάπτιση</p>
+
+        <h1 class="title">Κωστής & Λουκία</h1>
+
+        <p class="date-line">
+          Πέμπτη, 25 Ιουνίου 2026 • Περτούλι Τρικάλων
+        </p>
+
+      <div class="countdown">
+  <div class="cd-item"><div class="cd-num" id="cdDays">–</div><div class="cd-label">ημέρες</div></div>
+  <div class="cd-item"><div class="cd-num" id="cdHours">–</div><div class="cd-label">ώρες</div></div>
+  <div class="cd-item"><div class="cd-num" id="cdMins">–</div><div class="cd-label">λεπτά</div></div>
+  <div class="cd-item"><div class="cd-num" id="cdSecs">–</div><div class="cd-label">δευτ.</div></div>
+</div>
+
+
+        <div class="hero-actions">
+          <a class="btn" href="#details">Λεπτομέρειες</a>
+          <a class="btn ghost" href="#map">Οδηγίες</a>
+        </div>
+
+        <p class="note">Η επίσημη πρόσκληση θα ακολουθήσει.</p>
+      </div>
+    </section>
+
+    <!-- DETAILS -->
+    <section id="details" class="section">
+      <div class="container">
+        <h2>Λεπτομέρειες</h2>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Πότε</h3>
+            <p>25/06/2026<br><span class="muted">Ώρα: θα ανακοινωθεί</span></p>
+          </div>
+
+          <div class="card">
+            <h3>Πού</h3>
+            <p>
+              Το μυστήριο θα γίνει στο
+              <strong>Εξωκλήσι της Αγίας Παρασκευής</strong>,
+              στο <strong>Αρχοντικό Χατζηγάκη</strong>,
+              στο <strong>Περτούλι Τρικάλων</strong>.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Τι γιορτάζουμε</h3>
+            <p>Τον γάμο μας και τη βάπτιση του μικρού μας.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAM -->
+    <section id="program" class="section alt">
+      <div class="container">
+        <h2>Πρόγραμμα</h2>
+
+        <div class="timeline">
+          <div class="t-item">
+            <strong>Γάμος</strong>
+            <p>Τελετή στο εξωκλήσι</p>
+          </div>
+
+          <div class="t-item">
+            <strong>Βάπτιση</strong>
+            <p>Θα ακολουθήσει στο ίδιο μέρος</p>
+          </div>
+
+          <div class="t-item">
+            <strong>Γλέντι</strong>
+            <p>Φαγητό, μουσική και χορός</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!-- VENUE -->
+<!-- VENUE (PARALLAX) -->
+<section id="venue" class="venue-parallax">
+  <div class="container venue-parallax__inner">
+    <h2 class="h2" data-i18n="venue_title">Το Αρχοντικό</h2>
+
+    <p class="venue-parallax__text" data-i18n="venue_body">
+      Ένα ιστορικό, πετρόχτιστο αρχοντικό μέσα στο πράσινο του Περτουλίου — με κτήμα και εκκλησάκι στο χώρο, ιδανικό για γάμο & βάπτιση.
+    </p>
+  </div>
+</section>
+
+<!-- Optional: keep the two photos as a strip below (no big empty cards) -->
+<section class="section">
+  <div class="container">
+    <div class="photo-grid">
+      <figure class="photo">
+        <img
+          src="page_7.jpg"
+          alt="Outdoor wedding setup at the estate"
+          loading="lazy"
+        />
+        <figcaption data-i18n="venue_cap1">Στο κτήμα — καλοκαιρινή δεξίωση στο βουνό</figcaption>
+      </figure>
+
+      <figure class="photo">
+        <img
+          src="./Wedding-Estate-Slider-1-1980.jpg"
+          alt="Chatzigaki Manor exterior and gardens"
+          loading="lazy"
+        />
+        <figcaption data-i18n="venue_cap2">Το αρχοντικό & οι κήποι</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+
+    <!-- MAP -->
+    <section id="map" class="section">
+      <div class="container">
+        <h2>Χάρτης</h2>
+
+        <div class="map-wrap">
+          <iframe
+  title="Map"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCucx8l97Zx5CGexRd-B4zwziAYnAJBYic&q=place_id:ChIJdSFun3FAWRMRNr32dWxUTQM&zoom=10"
+  loading="lazy">
+</iframe>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STAY -->
+    <section id="stay" class="section alt">
+      <div class="container">
+        <h2>Διαμονή</h2>
+
+        <p>Για διαμονή στο Αρχοντικό Χατζηγάκη:</p>
+        <ul>
+          <li><a href="https://www.chatzigaki.gr/" target="_blank">www.chatzigaki.gr</a></li>
+          <li>Email: info@chatzigaki.gr</li>
+          <li>Τηλέφωνο: 2434 091 146</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section id="rsvp" class="section">
+      <div class="container">
+        <h2>RSVP</h2>
+        <p>Πληροφορίες σύντομα ❤️</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Κωστής & Λουκία • 25/06/2026</p>
+    </footer>
+  </main>
+</body>
+</html>
