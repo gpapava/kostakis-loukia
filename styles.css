@@ -348,3 +348,9 @@ li{ margin: 0.35rem 0; }
   color: #2f3b33;
 }
 
+#venue {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
