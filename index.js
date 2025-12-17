@@ -60,6 +60,32 @@ const STRINGS = {
   }
 };
 
+const translations = {
+  el: {
+    menu_details: "Λεπτομέρειες",
+    menu_program: "Πρόγραμμα",
+    menu_venue: "Το Αρχοντικό",
+    menu_map: "Χάρτης",
+    menu_stay: "Διαμονή",
+    menu_rsvp: "RSVP",
+
+    venue_title: "Το Αρχοντικό",
+    venue_body: "Ένα ιστορικό, πετρόχτιστο αρχοντικό μέσα στο πράσινο του Περτουλίου — με κτήμα και εκκλησάκι στο χώρο."
+  },
+  en: {
+    menu_details: "Details",
+    menu_program: "Schedule",
+    menu_venue: "The Manor",
+    menu_map: "Map",
+    menu_stay: "Accommodation",
+    menu_rsvp: "RSVP",
+
+    venue_title: "The Manor",
+    venue_body: "A historic stone-built manor surrounded by the greenery of Pertouli, featuring an estate and a private chapel."
+  }
+};
+
+
 function setLang(lang) {
   document.documentElement.lang = lang;
   localStorage.setItem("lang", lang);
