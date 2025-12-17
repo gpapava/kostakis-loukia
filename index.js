@@ -90,6 +90,14 @@ function setLang(lang) {
   document.documentElement.lang = lang;
   localStorage.setItem("lang", lang);
 
+    // Apply translations to all elements that have data-i18n
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.dataset.i18n;
+    const value = translations?.[lang]?.[key];
+    if (value) el.textContent = value; // keep existing Greek text if missing
+  });
+
+
   const btn = document.getElementById("langToggle");
   if (btn) btn.textContent = STRINGS[lang].toggle;
 
