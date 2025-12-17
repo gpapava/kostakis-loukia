@@ -348,10 +348,3 @@ li{ margin: 0.35rem 0; }
   color: #2f3b33;
 }
 
-/* TEMP: hide venue gallery section */
-#venue,
-.venue,
-.venue-section {
-  display: none !important;
-}
-
