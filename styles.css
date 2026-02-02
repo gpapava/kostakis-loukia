@@ -99,29 +99,44 @@ a { color: inherit; }
 /* Mobile menu button */
 .menu-toggle {
   display: none;
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid var(--border-light);
-  border-radius: 8px;
-  padding: 0.6rem 0.7rem;
+  background: transparent;
+  border: none;
+  padding: 0.4rem;
   cursor: pointer;
-  color: var(--text-light);
   z-index: 250;
 }
 
 .menu-toggle span {
   display: block;
-  width: 22px;
-  height: 3px;
+  width: 18px;
+  height: 2px;
   background: var(--text-light);
-  margin: 4px 0;
+  margin: 3px 0;
   border-radius: 2px;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+/* Hamburger animation when open */
+.menu-toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+.menu-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
 }
 
 @media (max-width: 799px) {
   .topbar {
     justify-content: flex-start;
-    padding-left: 4.5rem;
+    padding: 1.1rem 1.2rem;
+    padding-left: 3.5rem;
+    min-height: 54px;
   }
 
   .menu-toggle {
@@ -131,6 +146,10 @@ a { color: inherit; }
     position: absolute;
     left: 1rem;
     top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .menu-toggle.open {
     transform: translateY(-50%);
   }
 

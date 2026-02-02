@@ -168,11 +168,13 @@ function initMobileMenu() {
   function closeMenu() {
     nav.classList.remove('open');
     overlay.classList.remove('open');
+    toggle.classList.remove('open');
   }
 
   function openMenu() {
     nav.classList.add('open');
     overlay.classList.add('open');
+    toggle.classList.add('open');
   }
 
   toggle.addEventListener('click', () => {
