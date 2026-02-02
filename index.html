@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="el">
 <head>
-  <title>Κωστής & Λουκία — Save the date</title>
+  <title>Κωστής & Λουκία & Παύλος — Save the date</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0f1110" />
+  <meta name="theme-color" content="#2f4538" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Save the date!" />
-  <meta property="og:title" content="Κωστής & Λουκία" />
-  <meta property="og:description" content="Γάμος & Βάπτιση — 25/06/2026" />
+  <meta property="og:title" content="Κωστής & Λουκία & Παύλος" />
+  <meta property="og:description" content="Γάμος & Βάπτιση — 25/06/2026 — Περτούλι Τρικάλων" />
   <meta property="og:image" content="preview.png" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caudex&family=GFS+Neohellenic:wght@400;700&family=Literata:wght@200;300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&family=GFS+Neohellenic:wght@400;700&family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="./styles.css" />
@@ -28,17 +28,12 @@
 <body>
   <!-- TOP BAR -->
   <header class="topbar">
-    <a class="brand" href="#top">Κ & Λ</a>
-
     <nav class="nav">
-  <a href="#details" data-i18n="menu_details">Λεπτομέρειες</a>
-  <a href="#program" data-i18n="menu_program">Πρόγραμμα</a>
-  <a href="#venue" data-i18n="menu_venue">Το Αρχοντικό</a>
-  <a href="#map" data-i18n="menu_map">Χάρτης</a>
-  <a href="#stay" data-i18n="menu_stay">Διαμονή</a>
-  <a href="#rsvp" class="pill" data-i18n="menu_rsvp">RSVP</a>
-</nav>
-
+      <a href="#map" data-i18n="menu_map">Χάρτης</a>
+      <a href="#venue" data-i18n="menu_venue">Το Αρχοντικό</a>
+      <a href="#stay" data-i18n="menu_stay">Διαμονή</a>
+      <a href="#contact" data-i18n="menu_contact">Επικοινωνία</a>
+    </nav>
 
     <button id="langToggle" class="lang-toggle" type="button">
       ΕΛ / EN
@@ -46,171 +41,162 @@
   </header>
 
   <main id="top">
-    <!-- HERO -->
+    <!-- SECTION 1: HERO -->
     <section class="hero">
       <div class="hero-bg"></div>
 
       <div class="hero-inner">
-        <p class="kicker">Γάμος & Βάπτιση</p>
+        <h1 class="names">
+          <span class="names-couple" data-i18n="hero_couple">Κωστής - Λουκία</span>
+          <span class="names-child" data-i18n="hero_child">Παύλος</span>
+        </h1>
 
-        <h1 class="title">Κωστής & Λουκία</h1>
-
-        <p class="date-line">
-          Πέμπτη, 25 Ιουνίου 2026 • Περτούλι Τρικάλων
-        </p>
-
-      <div class="countdown">
-  <div class="cd-item"><div class="cd-num" id="cdDays">–</div><div class="cd-label">ημέρες</div></div>
-  <div class="cd-item"><div class="cd-num" id="cdHours">–</div><div class="cd-label">ώρες</div></div>
-  <div class="cd-item"><div class="cd-num" id="cdMins">–</div><div class="cd-label">λεπτά</div></div>
-  <div class="cd-item"><div class="cd-num" id="cdSecs">–</div><div class="cd-label">δευτ.</div></div>
-</div>
-
-
-        <div class="hero-actions">
-          <a class="btn" href="#details">Λεπτομέρειες</a>
-          <a class="btn ghost" href="#map">Οδηγίες</a>
+        <div class="countdown">
+          <div class="cd-item"><div class="cd-num" id="cdDays">–</div><div class="cd-label" data-i18n="cd_days">ημέρες</div></div>
+          <div class="cd-item"><div class="cd-num" id="cdHours">–</div><div class="cd-label" data-i18n="cd_hours">ώρες</div></div>
+          <div class="cd-item"><div class="cd-num" id="cdMins">–</div><div class="cd-label" data-i18n="cd_mins">λεπτά</div></div>
+          <div class="cd-item"><div class="cd-num" id="cdSecs">–</div><div class="cd-label" data-i18n="cd_secs">δευτ.</div></div>
         </div>
 
-        <p class="note">Η επίσημη πρόσκληση θα ακολουθήσει.</p>
+        <div class="hero-location">
+          <p class="venue-name">Αρχοντικό Χατζηγάκη</p>
+          <p class="venue-place">Περτούλι Τρικάλων</p>
+          <p class="venue-date">25 Ιουνίου 2026</p>
+        </div>
+
+        <p class="hero-message" data-i18n="hero_message">Σας περιμένουμε στο γάμο και τη βάφτιση του μικρού μας</p>
       </div>
     </section>
 
-    <!-- DETAILS -->
-    <section id="details" class="section">
-      <div class="container">
-        <h2>Λεπτομέρειες</h2>
-
-        <div class="cards">
-          <div class="card">
-            <h3>Πότε</h3>
-            <p>25/06/2026<br><span class="muted">Ώρα: θα ανακοινωθεί</span></p>
-          </div>
-
-          <div class="card">
-            <h3>Πού</h3>
-            <p>
-              Το μυστήριο θα γίνει στο
-              <strong>Εξωκλήσι της Αγίας Παρασκευής</strong>,
-              στο <strong>Αρχοντικό Χατζηγάκη</strong>,
-              στο <strong>Περτούλι Τρικάλων</strong>.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Τι γιορτάζουμε</h3>
-            <p>Τον γάμο μας και τη βάπτιση του μικρού μας.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROGRAM -->
-    <section id="program" class="section alt">
-      <div class="container">
-        <h2>Πρόγραμμα</h2>
-
-        <div class="timeline">
-          <div class="t-item">
-            <strong>Γάμος</strong>
-            <p>Τελετή στο εξωκλήσι</p>
-          </div>
-
-          <div class="t-item">
-            <strong>Βάπτιση</strong>
-            <p>Θα ακολουθήσει στο ίδιο μέρος</p>
-          </div>
-
-          <div class="t-item">
-            <strong>Γλέντι</strong>
-            <p>Φαγητό, μουσική και χορός</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-<!-- VENUE -->
-<!-- VENUE (PARALLAX) -->
-<section id="venue" class="venue-parallax">
-  <div class="container venue-parallax__inner">
-    <h2 class="h2" data-i18n="venue_title">Το Αρχοντικό</h2>
-
-    <p class="venue-parallax__text" data-i18n="venue_body">
-      Ένα ιστορικό, πετρόχτιστο αρχοντικό μέσα στο πράσινο του Περτουλίου — με κτήμα και εκκλησάκι στο χώρο.
-    </p>
-  </div>
-</section>
-
-<!-- Optional: keep the two photos as a strip below (no big empty cards) -->
-<section id="venue-photos" class="section venue-photos">
-  <div class="container">
-    <div class="photo-grid">
-      <figure class="photo">
-        <img
-          src="page_7.jpg"
-          alt="Outdoor wedding setup at the estate"
-          loading="lazy"
-        />
-        <figcaption data-i18n="venue_cap1">Στο κτήμα — καλοκαιρινή δεξίωση στο βουνό</figcaption>
-      </figure>
-
-      <figure class="photo">
-        <img
-          src="./Wedding-Estate-Slider-1-1980.jpg"
-          alt="Chatzigaki Manor exterior and gardens"
-          loading="lazy"
-        />
-        <figcaption data-i18n="venue_cap2">Το αρχοντικό & οι κήποι</figcaption>
-      </figure>
+    <!-- Separator -->
+    <div class="section-divider">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z" fill="currentColor"/>
+      </svg>
     </div>
-  </div>
-</section>
 
-
-    <!-- MAP -->
-    <section id="map" class="section">
-      <div class="container">
-        <h2>Χάρτης</h2>
-
+    <!-- SECTION 2: MAP -->
+    <section id="map" class="section-map">
+      <div class="map-bg"></div>
+      <div class="container map-container">
+        <h2 class="map-title" data-i18n="map_title">Οδηγίες</h2>
         <div class="map-wrap">
-<iframe
-  title="Map"
-  loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade"
-  src="https://www.google.com/maps?q=Αρχοντικό%20Χατζηγάκη%20Περτούλι&output=embed">
-</iframe>
-
-
+          <iframe
+            title="Map"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Αρχοντικό+Χατζηγάκη+Περτούλι&output=embed">
+          </iframe>
         </div>
       </div>
     </section>
 
-    <!-- STAY -->
-    <section id="stay" class="section alt">
-      <div class="container">
-        <h2>Διαμονή</h2>
+    <!-- Separator 2 -->
+    <div class="section-divider divider-to-sage">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0 L0,60 Q600,120 1200,60 L1200,0 Z" fill="currentColor"/>
+      </svg>
+    </div>
 
-        <p>Για διαμονή στο Αρχοντικό Χατζηγάκη:</p>
-        <ul>
-          <li><a href="https://www.chatzigaki.gr/" target="_blank">www.chatzigaki.gr</a></li>
-          <li>Email: info@chatzigaki.gr</li>
-          <li>Τηλέφωνο: 2434 091 146</li>
-        </ul>
+    <!-- SECTION 3: VENUE -->
+    <section id="venue" class="section-venue">
+      <div class="venue-bg"></div>
+      <div class="venue-card">
+        <h2 data-i18n="venue_title">Το Αρχοντικό</h2>
+        <p class="venue-text" data-i18n="venue_body">
+          Το Αρχοντικό Χατζηγάκη είναι ένα πολυτελές, παραδοσιακό και ιστορικό ξενοδοχείο 5 αστέρων που βρίσκεται στο Περτούλι, κοντά στην Ελάτη στην κεντρική Ελλάδα. Κρυμμένο στις καταπράσινες πλαγιές της οροσειράς της Πίνδου, σε υψόμετρο 1.200 μέτρων, προσφέρει εξαιρετική θέα προς το δάσος και τα περιχώρια. Συνδυάζει παραδοσιακή αρχιτεκτονική με σύγχρονες ανέσεις, σε πλήρη αρμονία με τις ελληνικές παραδόσεις.
+        </p>
+        <a
+          class="btn info-btn"
+          href="https://www.chatzigaki.gr/"
+          target="_blank"
+          data-i18n="btn_info"
+        >
+          Info
+        </a>
       </div>
     </section>
 
-    <!-- RSVP -->
-    <section id="rsvp" class="section">
+    <!-- SECTION 4: ACCOMMODATION -->
+    <section id="stay" class="section-stay">
+      <div class="stay-bg"></div>
       <div class="container">
-        <h2>RSVP</h2>
-        <p>Πληροφορίες σύντομα ❤️</p>
+        <h2 data-i18n="stay_title">Διαμονή</h2>
+
+        <div class="stay-cards">
+          <!-- Main option -->
+          <div class="stay-card main">
+            <h3>Αρχοντικό Χατζηγάκη</h3>
+            <p class="availability" data-i18n="stay_limited">Περιορισμένη διαθεσιμότητα</p>
+            <ul class="contact-list">
+              <li>
+                <span class="icon">🌐</span>
+                <a href="https://www.chatzigaki.gr/" target="_blank">www.chatzigaki.gr</a>
+              </li>
+              <li>
+                <span class="icon">✉️</span>
+                <a href="mailto:info@chatzigaki.gr">info@chatzigaki.gr</a>
+              </li>
+              <li>
+                <span class="icon">📞</span>
+                <a href="tel:+302434091146">2434 091 146</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Alternatives -->
+          <div class="stay-card alt">
+            <h3 data-i18n="stay_alternatives">Εναλλακτικές Επιλογές</h3>
+            <ul class="alternatives-list">
+              <li>
+                <strong>Περτούλι</strong>
+                <span class="distance"></span>
+              </li>
+              <li>
+                <strong data-i18n="stay_neraidochori">Νεραϊδοχώρι</strong>
+                <span class="distance">(3 χλμ)</span>
+              </li>
+              <li>
+                <strong data-i18n="stay_elati">Ελάτη</strong>
+                <span class="distance">(15 χλμ)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <footer class="footer">
-      <p>Κωστής & Λουκία • 25/06/2026</p>
-    </footer>
+    <!-- Separator 3 -->
+    <div class="section-divider divider-to-dark">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z" fill="currentColor"/>
+      </svg>
+    </div>
+
+    <!-- SECTION 5: CONTACT -->
+    <section id="contact" class="section-contact">
+      <div class="contact-bg"></div>
+      <div class="container">
+        <h2 data-i18n="contact_title">Επικοινωνία</h2>
+
+        <div class="contact-cards">
+          <div class="contact-card">
+            <h3>Κωστής</h3>
+            <a href="tel:+306947695129" class="phone">694 769 5129</a>
+          </div>
+          <div class="contact-card">
+            <h3>Λουκία</h3>
+            <a href="tel:+306974449097" class="phone">697 444 9097</a>
+          </div>
+        </div>
+
+        <p class="invitation-note" data-i18n="contact_note">Θα ακολουθήσει επίσημη πρόσκληση</p>
+      </div>
+
+      <footer class="footer">
+        <p>Κωστής & Λουκία & Παύλος • 25/06/2026</p>
+      </footer>
+    </section>
   </main>
 </body>
 </html>
