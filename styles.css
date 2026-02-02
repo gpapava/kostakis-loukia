@@ -38,10 +38,12 @@ html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  scroll-padding-top: 54px; /* Account for fixed header on anchor clicks */
 }
 
 body {
   margin: 0;
+  padding-top: 54px; /* Height of fixed header */
   color: var(--text);
   background: var(--bg);
   font-family: 'GFS Neohellenic', 'Segoe UI', system-ui, sans-serif;
@@ -60,8 +62,10 @@ a { color: inherit; }
 /* TOP BAR               */
 /* ===================== */
 .topbar {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   display: flex;
   justify-content: center;
@@ -69,6 +73,7 @@ a { color: inherit; }
   padding: 0.9rem 1.2rem;
   background: rgba(26, 51, 40, 0.97);
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-light);
 }
 
@@ -238,12 +243,15 @@ a { color: inherit; }
 .hero {
   position: relative;
   min-height: 100vh;
+  min-height: 100dvh; /* Dynamic viewport height for iOS Safari */
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6rem 1rem 4rem;
+  padding: 2rem 1rem 4rem;
   overflow: hidden;
   scroll-snap-align: start;
+  margin-top: -54px; /* Compensate for body padding-top */
+  padding-top: calc(54px + 2rem); /* Add header height back to padding */
 }
 
 .hero-bg {
