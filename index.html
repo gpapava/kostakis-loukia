@@ -28,7 +28,13 @@
 <body>
   <!-- TOP BAR -->
   <header class="topbar">
-    <nav class="nav">
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <nav class="nav" id="navMenu">
       <a href="#map" data-i18n="menu_map">Χάρτης</a>
       <a href="#venue" data-i18n="menu_venue">Το Αρχοντικό</a>
       <a href="#stay" data-i18n="menu_stay">Διαμονή</a>

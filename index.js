@@ -157,8 +157,43 @@ function initLang() {
   }
 }
 
+// Mobile menu toggle
+function initMobileMenu() {
+  const toggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('navMenu');
+  const overlay = document.getElementById('menuOverlay');
+
+  if (!toggle || !nav || !overlay) return;
+
+  function closeMenu() {
+    nav.classList.remove('open');
+    overlay.classList.remove('open');
+  }
+
+  function openMenu() {
+    nav.classList.add('open');
+    overlay.classList.add('open');
+  }
+
+  toggle.addEventListener('click', () => {
+    if (nav.classList.contains('open')) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  overlay.addEventListener('click', closeMenu);
+
+  // Close menu when clicking a nav link
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+}
+
 window.addEventListener("load", () => {
   initLang();
   updateCountdown();
   setInterval(updateCountdown, 1000);
+  initMobileMenu();
 });
