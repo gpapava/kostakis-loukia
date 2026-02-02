@@ -51,6 +51,9 @@ const translations = {
     // Hero
     hero_couple: "Κωστής - Λουκία",
     hero_child: "Παύλος",
+    hero_venue_name: "Αρχοντικό Χατζηγάκη",
+    hero_venue_place: "Περτούλι Τρικάλων",
+    hero_venue_date: "25 Ιουλίου 2026",
     hero_message: "Σας περιμένουμε στο γάμο και τη βάφτιση του μικρού μας",
 
     // Countdown
@@ -71,13 +74,17 @@ const translations = {
 
     // Stay
     stay_title: "Διαμονή",
+    stay_chatzigaki: "Αρχοντικό Χατζηγάκη",
     stay_limited: "Περιορισμένη διαθεσιμότητα",
     stay_alternatives: "Εναλλακτικές Επιλογές",
+    stay_pertouli: "Περτούλι",
     stay_elati: "Ελάτη",
     stay_neraidochori: "Νεραϊδοχώρι",
 
     // Contact
     contact_title: "Επικοινωνία",
+    contact_kostis: "Κωστής",
+    contact_loukia: "Λουκία",
     contact_note: "Θα ακολουθήσει επίσημη πρόσκληση",
 
     // Lang toggle
@@ -93,6 +100,9 @@ const translations = {
     // Hero
     hero_couple: "Kostis - Loukia",
     hero_child: "Pavlos",
+    hero_venue_name: "Chatzigaki Manor",
+    hero_venue_place: "Pertouli, Trikala",
+    hero_venue_date: "25 July 2026",
     hero_message: "We look forward to celebrating our wedding and our son's baptism with you",
 
     // Countdown
@@ -113,13 +123,17 @@ const translations = {
 
     // Stay
     stay_title: "Accommodation",
+    stay_chatzigaki: "Chatzigaki Manor",
     stay_limited: "Limited availability",
     stay_alternatives: "Alternative Options",
+    stay_pertouli: "Pertouli",
     stay_elati: "Elati",
     stay_neraidochori: "Neraidochori",
 
     // Contact
     contact_title: "Contact",
+    contact_kostis: "Kostis",
+    contact_loukia: "Loukia",
     contact_note: "A formal invitation will follow",
 
     // Lang toggle
