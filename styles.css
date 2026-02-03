@@ -678,7 +678,8 @@ a { color: inherit; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 15vh;
   color: var(--text-light);
   text-align: center;
   scroll-snap-align: start;
@@ -756,7 +757,7 @@ a { color: inherit; }
 /* ===================== */
 .footer {
   position: absolute;
-  bottom: 4rem;
+  bottom: 12vh;
   left: 0;
   right: 0;
   text-align: center;
