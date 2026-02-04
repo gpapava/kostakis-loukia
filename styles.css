@@ -351,7 +351,7 @@ a { color: inherit; }
 }
 
 .venue-date {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: var(--muted-light);
   font-weight: 600;
 }
@@ -490,22 +490,26 @@ a { color: inherit; }
   background-position: center;
 }
 
-.venue-card {
+.venue-container {
   position: relative;
-  text-align: center;
   width: min(700px, 90vw);
-  padding: 3rem 2.5rem;
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: calc(var(--radius) + 8px);
-  border: 1px solid var(--border-light);
-  box-shadow: var(--shadow);
+  text-align: center;
 }
 
-.venue-card h2 {
-  margin: 0 0 1.5rem;
+.venue-title {
+  margin: 0 0 2rem;
   font-family: 'Caudex', serif;
   font-size: 2.2rem;
   color: var(--text-light);
+  letter-spacing: 0.05em;
+}
+
+.venue-card {
+  text-align: center;
+  padding: 2.5rem 2.5rem;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: calc(var(--radius) + 8px);
+  border: 1px solid var(--border-light);
 }
 
 .venue-text {
@@ -516,15 +520,15 @@ a { color: inherit; }
 }
 
 .info-btn {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.2);
   color: var(--text-light);
-  border-color: var(--border-light);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .info-btn:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.35);
   color: white;
-  border-color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.7);
 }
 
 /* ===================== */
@@ -720,7 +724,7 @@ a { color: inherit; }
 
 .contact-card {
   padding: 1.5rem 2.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.25);
   border-radius: var(--radius);
   border: 1px solid var(--border-light);
 }
@@ -825,7 +829,7 @@ a { color: inherit; }
   }
 
   .venue-date {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .hero-message {
@@ -834,14 +838,17 @@ a { color: inherit; }
   }
 
   /* Section 3 - Venue */
-  .venue-card {
-    padding: 1.2rem 1rem;
+  .venue-container {
     width: 88vw;
   }
 
-  .venue-card h2 {
+  .venue-title {
     font-size: 1.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .venue-card {
+    padding: 1.2rem 1rem;
   }
 
   .venue-text {
