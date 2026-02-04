@@ -270,7 +270,7 @@ a { color: inherit; }
   text-align: center;
   width: min(700px, 92vw);
   padding: 3rem 2rem;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.4);
   border-radius: calc(var(--radius) + 8px);
   border: 1px solid var(--border-light);
   box-shadow: var(--shadow);
@@ -295,7 +295,7 @@ a { color: inherit; }
 .names-child {
   font-size: clamp(2rem, 5vw, 2.8rem);
   letter-spacing: 0.06em;
-  color: var(--sage-light);
+  color: var(--text-light);
 }
 
 /* Countdown */
@@ -507,7 +507,7 @@ a { color: inherit; }
 .venue-card {
   text-align: center;
   padding: 2.5rem 2.5rem;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.4);
   border-radius: calc(var(--radius) + 8px);
   border: 1px solid var(--border-light);
 }
@@ -515,7 +515,7 @@ a { color: inherit; }
 .venue-text {
   margin: 0 0 2rem;
   color: var(--muted-light);
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   line-height: 1.8;
 }
 
@@ -594,7 +594,7 @@ a { color: inherit; }
 .stay-card {
   padding: 2rem;
   border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.4);
   border: 1px solid var(--border-light);
 }
 
@@ -724,7 +724,7 @@ a { color: inherit; }
 
 .contact-card {
   padding: 1.5rem 2.5rem;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.4);
   border-radius: var(--radius);
   border: 1px solid var(--border-light);
 }
