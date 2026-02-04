@@ -270,7 +270,7 @@ a { color: inherit; }
   text-align: center;
   width: min(700px, 92vw);
   padding: 3rem 2rem;
-  background: var(--surface);
+  background: rgba(255, 255, 255, 0.7);
   border-radius: calc(var(--radius) + 8px);
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
@@ -507,7 +507,7 @@ a { color: inherit; }
 .venue-card {
   text-align: center;
   padding: 2.5rem 2.5rem;
-  background: var(--surface);
+  background: rgba(255, 255, 255, 0.7);
   border-radius: calc(var(--radius) + 8px);
   border: 1px solid var(--border);
 }
@@ -593,7 +593,7 @@ a { color: inherit; }
 .stay-card {
   padding: 2rem;
   border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: var(--shadow-soft);
 }
