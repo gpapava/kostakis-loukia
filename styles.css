@@ -270,7 +270,7 @@ a { color: inherit; }
   text-align: center;
   width: min(700px, 92vw);
   padding: 3rem 2rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.25);
   border-radius: calc(var(--radius) + 8px);
   border: 1px solid var(--border-light);
   box-shadow: var(--shadow);
@@ -310,7 +310,7 @@ a { color: inherit; }
 .cd-item {
   padding: 1rem 0.5rem;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.12);
   border: 1px solid var(--border-light);
 }
 
@@ -359,7 +359,7 @@ a { color: inherit; }
 .hero-message {
   margin: 0;
   padding: 1.2rem;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.12);
   border-radius: var(--radius);
   font-size: 1.25rem;
   letter-spacing: 0.03em;
@@ -495,7 +495,7 @@ a { color: inherit; }
   text-align: center;
   width: min(700px, 90vw);
   padding: 3rem 2.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.25);
   border-radius: calc(var(--radius) + 8px);
   border: 1px solid var(--border-light);
   box-shadow: var(--shadow);
@@ -590,9 +590,8 @@ a { color: inherit; }
 .stay-card {
   padding: 2rem;
   border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.25);
   border: 1px solid var(--border-light);
-  box-shadow: var(--shadow-soft);
 }
 
 .stay-card h3 {
@@ -603,7 +602,7 @@ a { color: inherit; }
 }
 
 .stay-card.main {
-  border-left: 4px solid rgba(255, 255, 255, 0.3);
+  border-left: none;
 }
 
 .availability {
