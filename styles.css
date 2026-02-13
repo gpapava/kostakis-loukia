@@ -785,6 +785,10 @@ a { color: inherit; }
 /* ===================== */
 @media (max-width: 600px) {
   /* Section 1 - Hero */
+  .hero-bg {
+    background-size: 100% 100%;
+  }
+
   .hero-inner {
     padding: 1.2rem 0.9rem;
     width: 88vw;
