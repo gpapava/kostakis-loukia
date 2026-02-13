@@ -259,7 +259,7 @@ a { color: inherit; }
   inset: 0;
   background-image:
     linear-gradient(180deg, rgba(20, 45, 30, 0.4), rgba(20, 45, 30, 0.6)),
-    url("page_3a.jpg");
+    url("hero-bg.jpg");
   background-size: cover;
   background-position: center;
   filter: saturate(1.1) contrast(1.05);
@@ -351,7 +351,7 @@ a { color: inherit; }
 }
 
 .venue-date {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   color: var(--muted);
   font-weight: 600;
 }
@@ -829,7 +829,7 @@ a { color: inherit; }
   }
 
   .venue-date {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .hero-message {
