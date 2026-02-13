@@ -39,7 +39,6 @@ html {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   scroll-padding-top: 54px; /* Account for fixed header on anchor clicks */
-  height: -webkit-fill-available;
 }
 
 body {
@@ -787,9 +786,8 @@ a { color: inherit; }
 @media (max-width: 600px) {
   /* Section 1 - Hero */
   .hero {
-    min-height: 100vh;
-    min-height: 100svh;
-    min-height: -webkit-fill-available;
+    min-height: calc(100vh + 54px);
+    min-height: calc(100dvh + 54px);
   }
 
   .hero-bg {
