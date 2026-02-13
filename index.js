@@ -80,6 +80,7 @@ const translations = {
     stay_pertouli: "Περτούλι",
     stay_elati: "Ελάτη",
     stay_neraidochori: "Νεραϊδοχώρι",
+    stay_contact_betty: "Μπέτυ Χατζηγάκη",
 
     // Contact
     contact_title: "Επικοινωνία",
@@ -129,6 +130,7 @@ const translations = {
     stay_pertouli: "Pertouli",
     stay_elati: "Elati",
     stay_neraidochori: "Neraidochori",
+    stay_contact_betty: "Mpety Chatzigaki",
 
     // Contact
     contact_title: "Contact",
