@@ -81,6 +81,8 @@ const translations = {
     stay_elati: "Ελάτη",
     stay_neraidochori: "Νεραϊδοχώρι",
     stay_contact_betty: "Μπέτυ Χατζηγάκη",
+    stay_distance_3: "(3 χλμ)",
+    stay_distance_15: "(15 χλμ)",
 
     // Contact
     contact_title: "Επικοινωνία",
@@ -131,6 +133,8 @@ const translations = {
     stay_elati: "Elati",
     stay_neraidochori: "Neraidochori",
     stay_contact_betty: "Mpety Chatzigaki",
+    stay_distance_3: "(3 km)",
+    stay_distance_15: "(15 km)",
 
     // Contact
     contact_title: "Contact",
