@@ -849,6 +849,19 @@ a { color: inherit; }
     font-size: 1rem;
   }
 
+  /* Section 2 - Map */
+  .section-map {
+    padding-top: 6vh;
+  }
+
+  .map-container {
+    width: 90vw;
+  }
+
+  .map-wrap {
+    height: min(50vh, 400px);
+  }
+
   /* Section 3 - Venue */
   .venue-container {
     width: 88vw;
