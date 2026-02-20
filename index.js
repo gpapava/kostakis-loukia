@@ -49,7 +49,7 @@ const translations = {
     menu_contact: "Επικοινωνία",
 
     // Hero
-    hero_couple: "Κωστής - Λουκία",
+    hero_couple: "Κωστής Λουκία",
     hero_child: "Παύλος",
     hero_venue_name: "Αρχοντικό Χατζηγάκη",
     hero_venue_place: "Περτούλι Τρικάλων",
@@ -89,6 +89,7 @@ const translations = {
     contact_kostis: "Κωστής",
     contact_loukia: "Λουκία",
     contact_note: "Θα ακολουθήσει επίσημη πρόσκληση",
+    footer_names: "Κωστής Λουκία<br>&<br>Παύλος<br>25/07/2026",
 
     // Lang toggle
     toggle: "ΕΛ / EN"
@@ -101,7 +102,7 @@ const translations = {
     menu_contact: "Contact",
 
     // Hero
-    hero_couple: "Kostis - Loukia",
+    hero_couple: "Kostis Loukia",
     hero_child: "Pavlos",
     hero_venue_name: "Chatzigaki Manor",
     hero_venue_place: "Pertouli, Trikala",
@@ -141,6 +142,7 @@ const translations = {
     contact_kostis: "Kostis",
     contact_loukia: "Loukia",
     contact_note: "A formal invitation will follow",
+    footer_names: "Kostis Loukia<br>&<br>Pavlos<br>25/07/2026",
 
     // Lang toggle
     toggle: "EN / ΕΛ"
@@ -156,6 +158,13 @@ function setLang(lang) {
     const key = el.dataset.i18n;
     const value = translations?.[lang]?.[key];
     if (value) el.textContent = value;
+  });
+
+  // Apply HTML translations to elements with data-i18n-html
+  document.querySelectorAll("[data-i18n-html]").forEach((el) => {
+    const key = el.dataset.i18nHtml;
+    const value = translations?.[lang]?.[key];
+    if (value) el.innerHTML = value;
   });
 
   // Update toggle button
