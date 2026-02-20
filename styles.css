@@ -536,11 +536,12 @@ a { color: inherit; }
 .section-stay {
   position: relative;
   padding: 4rem 0;
+  padding-top: 8rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   scroll-snap-align: start;
   overflow: hidden;
 }
