@@ -43,6 +43,7 @@ function updateCountdown() {
 const translations = {
   el: {
     // Menu
+    menu_home: "Αρχική",
     menu_map: "Χάρτης",
     menu_venue: "Το Αρχοντικό",
     menu_stay: "Διαμονή",
@@ -96,6 +97,7 @@ const translations = {
   },
   en: {
     // Menu
+    menu_home: "Home",
     menu_map: "Map",
     menu_venue: "The Manor",
     menu_stay: "Accommodation",
