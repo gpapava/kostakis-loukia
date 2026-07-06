@@ -54,7 +54,7 @@ const translations = {
     hero_child: "Παύλος",
     hero_venue_name: "Αρχοντικό Χατζηγάκη",
     hero_venue_place: "Περτούλι Τρικάλων",
-    hero_venue_date: "25 Ιουλίου 2026",
+    hero_venue_date: "25 Ιουλίου 2026 · 17:30",
     hero_message: "Σας περιμένουμε στο γάμο και τη βάφτιση του μικρού μας",
 
     // Countdown
@@ -108,7 +108,7 @@ const translations = {
     hero_child: "Pavlos",
     hero_venue_name: "Chatzigaki Manor",
     hero_venue_place: "Pertouli, Trikala",
-    hero_venue_date: "25 July 2026",
+    hero_venue_date: "25 July 2026 · 17:30",
     hero_message: "We look forward to celebrating our wedding and our son's baptism with you",
 
     // Countdown
