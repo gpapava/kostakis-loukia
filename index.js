@@ -1,7 +1,7 @@
 // Kostis & Loukia & Pavlos — Save the Date
 // Countdown + EL/EN translations
 
-const EVENT_ISO = "2026-07-25T00:00:00+03:00";
+const EVENT_ISO = "2026-07-25T17:30:00+03:00";
 
 function pad2(n) {
   return String(n).padStart(2, "0");
